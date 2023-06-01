@@ -9,3 +9,8 @@ function myFunction() { //Declares this function as "MyFunction"
     document.getElementById("Concatenate").innerHTML = sentence; // replaces text with the sentence variables text for anything with the ID "Concatenate."
 
 }
+
+function yellow() {
+const myElement = document.getElementById("Concatenate");
+myElement.style.color= "yellow";
+}
