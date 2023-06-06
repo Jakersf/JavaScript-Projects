@@ -42,6 +42,11 @@ function BooleanOperators() { //Uses the OR (can plug in && as well) operator to
    document.getElementById("Test8").innerHTML = booleanoperators
 }
 
+function BooleanOperators2() { //Uses the AND operator to display true if both 2 < 4 and 6 < 5, if either aren't true the code displays false.
+    var booleanoperators2 = (2 < 4 && 6 < 5);
+    document.getElementById("Test10").innerHTML = booleanoperators2
+}
+
 function NotFunction() { // Uses the NOT operator to see if 5 > 10 is not greater than 10, since 5 is not greater than 10 it displays as true.
     document.getElementById("Test9").innerHTML = !(5 > 10);
 }
