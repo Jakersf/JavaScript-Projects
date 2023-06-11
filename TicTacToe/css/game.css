@@ -1,0 +1,35 @@
+/*GAME BOARD*/
+.center-container { /*Positioning of center container*/
+    width: 608px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+table { /*Collapses the table border into 1 border and hides the outer borders.*/
+    border-collapse:collapse;
+    border-style:hidden;
+}
+
+td { /*Changes to a pointer when hovering over the td elements, sets the border style, and removes the default padding.*/
+    cursor:pointer;
+    border: 4px solid rgba(19, 7, 185, 0.774);
+    padding: 0px;
+    width: 200px;
+    height: 200px;
+    filter: contrast(3);
+}
+
+canvas {
+    position: absolute;
+    z-index: 10;
+    pointer-events: none;
+}
+/*GAME BOARD END*/
+
+/*H1 CENTER*/
+h1 {
+    font-style: Arial;
+    text-align:center;
+    color: cyan;
+}
+
