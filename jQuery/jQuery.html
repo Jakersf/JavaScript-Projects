@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    <body>
+    <script>
+        $(document).ready(function() { //ready causes this function to run as the page is loading.
+            $("html").append( //uses the jquery function "append" to add these HTML elements listed below.
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                        </div>\
+                    </div>\
+                </body>"           
+            );
+            $("#1").click(function() { //uses the click handler to display a message in the console when an element is clicked.
+                console.log("You clicked paragraph 1"); //displays the stated string in the console.
+            });
+            $("#2").css({"color":"red"}); //uses the css method in jquery to changes the CSS of the document.
+            $("#3").click(function() { //uses the click handler to hide the h1 element
+                $('h1').hide();
+            });
+        });
+    </script>
+    </body>
+</html>
